@@ -1,0 +1,13 @@
+@import '../mediaqueries';
+@import'../variables';
+
+.home{
+    @include query (mobile){
+        
+        height: 70vh !important;
+        
+        .carousel{
+            width: 100vw;
+        }
+    }
+}

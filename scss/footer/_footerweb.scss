@@ -1,0 +1,27 @@
+@import '../mediaqueries';
+@import'../variables';
+@import'../display';
+
+footer {
+   
+    @include query (web) {
+        
+        .mobile{
+            display: none;
+        }
+
+        .web{
+            @include flex (space-evenly);
+            height: 6vh;
+            margin: 1vh 0;
+            padding: 0 40vw;
+            font-size: 4.5vh;
+            
+            a{
+                &:hover{
+                color: nth($color, 6);
+            }
+        }
+        }
+    }
+} 

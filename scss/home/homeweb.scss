@@ -1,0 +1,23 @@
+@import '../mediaqueries';
+@import'../variables';
+
+.home{
+    @include query (web){
+        height: 55vh;
+        width: 100vw;
+        position: relative;
+
+        h1{
+            position: absolute;
+            right: 27%;
+            top:50%;
+            color: rgba(nth($color, 5),0.8);
+            font-family: 'Meddon', cursive;
+            white-space: pre-line;
+            font-size: 1.8em;
+            text-align: center;
+            z-index: $z-min+14;
+        }
+        
+    }
+}

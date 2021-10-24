@@ -1,0 +1,9 @@
+@import'../variables';
+
+.flecha-arriba{
+    position:fixed;
+    bottom: 5.1vh;
+    right: 4.5vw;
+    color: nth($color, 2 );
+    font-size: 3.5rem;
+}

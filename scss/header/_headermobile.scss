@@ -1,0 +1,82 @@
+*{/*reseteo -HTML*/
+    margin: 0;
+    padding: 0;
+}
+
+@import '../mediaqueries';
+@import'../variables';
+@import'../display';
+
+
+header{
+
+    @include query (mobile){
+
+        height: 15vh;
+        @include column (flex-start);
+        background-color: rgba(nth($color, 5),0.7);
+        
+
+        .menumobile{
+            padding: 0;
+            height: 15vh;
+            @include flex (flex-start);
+            position: relative;
+            width: $base-wd;
+            transition: all 0.5s ease-in;
+                    
+            &:hover{
+                .subnav-content-mobile{
+                    @include column (flex-start);
+                    
+                }
+            }
+            
+            
+            img{
+                padding:2vw;
+                height: 15vh;
+                width: 15vh; 
+                justify-content: flex-end;
+            }
+        
+            nav{
+                display: none;      
+                position:absolute;
+                padding:0;
+                background-color: rgba(nth($color, 5),0.7);
+                height: 85vh;
+                width: $base-wd;
+                top:15vh;
+                left:0;
+                z-index: $z-max;
+                font-size: 2em;
+                text-align: center;
+                
+                ul{
+                    padding:0;
+                    
+                    li{
+                        list-style-type: none;
+                        a{ 
+                            &:hover{
+                                background-color: rgba(nth($color, 1),0.8);
+                                color: rgba(nth($color, 4), 0.6);
+                            }
+                        }
+                    }
+                }
+            }
+
+            h1{ 
+                position: absolute;
+                top:6vh;
+                right: 3vw;
+                color: nth($color, 2 );
+                font-family: 'Meddon', cursive;
+                white-space: pre-line;
+                font-size: 1.5rem;
+            }
+        }
+    }
+}

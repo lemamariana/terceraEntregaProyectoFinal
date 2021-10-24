@@ -1,0 +1,39 @@
+@import'../variables';
+
+#listaproductos{
+    background-color: rgba(nth($color, 1),0.8);
+    color: nth($color, 4 );
+    border-radius: 3vw;
+    font-size: 1.4vw;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    border: solid 0.1vw;
+    border-color: rgba(nth($color, 6),0.5);
+
+    ul{  
+        margin: 0;
+        padding: 0;
+        text-transform: capitalize;
+        text-align: center;
+
+        h3{
+            background-color: rgba(nth($color, 6),0.5);
+            animation: backInRight 2s;
+            margin: 0;
+            border-radius: 3vw;
+        }
+
+        .lista{
+            background-color: rgba(nth($color, 1),0.5);
+            padding:1.5vh;
+            border-radius: 3vw;
+
+            li{
+                list-style-type: none;
+                font-family: 'Roboto', sans-serif;
+                font-size: 1.9vw;
+            }
+        }
+    }
+}
+

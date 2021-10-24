@@ -1,0 +1,15 @@
+@import '../transform';
+
+.galeria{
+    
+    img{
+        
+        border-radius: 3vw;
+        transition: all 0.5s ease-in;
+            
+        &:hover{
+            @include transform(scale(1.3));
+        }
+    }
+}
+

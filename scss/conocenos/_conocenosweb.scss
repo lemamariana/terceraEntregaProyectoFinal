@@ -1,0 +1,46 @@
+@import '../mediaqueries';
+@import'../variables';
+@import'../display';
+
+#conocenos{
+
+
+    .web-texto{
+        @include column (center);
+        text-align: left;
+        padding: 0 3vw;
+      
+        h2{
+            color: nth($list: $color, $n:2);
+            font: bold 2em;   
+        }
+        
+        p{
+            font-size: 1em;
+            
+        }
+    }
+    .web-img{
+        padding: 0;
+        justify-content: center;
+        margin: 5vh 0;
+        border-radius: 3vw;
+        box-shadow: 1vw 1vw 2vw nth($color, 2);
+    }
+    .item2-4{
+        flex-direction: row-reverse;
+        
+        .web-texto{
+            text-align: right;
+        }
+    }
+    
+    .web-img-2-4{
+        padding: 0;
+        justify-content: center;
+        margin: 5vh 0;
+        border-radius: 3vw;
+        box-shadow: -1vw 0 2vw 1vw nth($color, 2);
+    }
+
+}

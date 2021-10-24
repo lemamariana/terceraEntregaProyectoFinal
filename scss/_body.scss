@@ -1,0 +1,23 @@
+@import '../scss/display';
+@import'../scss/variables';
+
+html{
+    width: $base-wd;
+}
+
+body { /*estilo -BODY*/
+    margin: 0;
+    padding: 0;
+    background-color: rgba(nth($color, $n:6),0.2);
+    height: $base-hg;
+    width: $base-wd;
+    font-family:'Montserrat', sans-serif;
+    @include column (space-around);
+
+}
+
+header a, footer a { /*estilo -ENLACES*/
+    color: nth($color,2);
+    text-decoration: none;
+
+}

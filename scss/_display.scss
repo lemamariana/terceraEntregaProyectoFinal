@@ -1,0 +1,17 @@
+/*mixins de flexbox y centrado*/
+
+@mixin flex ($justify-content){
+    display:flex;
+    align-items: center;
+    justify-content: $justify-content;
+
+}
+
+@mixin column ($justify-content){
+    display: flex;
+    flex-direction: column;
+    justify-content: $justify-content;
+}
+
+
+

@@ -1,0 +1,33 @@
+@import '../mediaqueries';
+@import'../variables';
+@import'../display';
+
+footer {
+               
+    @include query (mobile){
+        
+        .mobile{
+            @include flex (flex-end);
+            height: 15vh;
+            font-size: 1.5em;       
+        }
+    
+        a{
+            height: 5vh;
+            width: 5vh;
+            margin: 2vw;
+            padding: 0.25em 0.3em 0.3em 0.3em;
+            background-color: rgba(nth($color, 5),0.8);
+            border-radius: 3px;
+            text-decoration: none;
+            color: nth($color, 2);
+            @include flex (center);
+        
+            &:hover{
+                color: rgba(nth($color, 5),0.8); 
+            }
+        }
+
+    }
+    
+}

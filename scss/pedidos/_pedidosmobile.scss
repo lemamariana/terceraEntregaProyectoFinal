@@ -1,0 +1,8 @@
+#pedidos{
+    margin: 6.5vh;
+}
+
+@include query (mobile){
+
+   @include column (center);
+}

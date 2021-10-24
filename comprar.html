@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Victoria Ortiz Repostería. Realizamos productos de calidad hechos con mucho amor"> 
+    <meta name="keywords" content="Repostería, amor, productos de calidad, tortas, postres, desayunos, dulces, salados, increíbles, ricos, deliciosos"> 
+    <meta property="og: title" content="Victoria Ortiz - Repostería">
+    <meta property="og: image" content="images/fondo2"> 
+    <meta property="og: image:width=300px"> 
+    <meta property="og: image:height=300px">
+    <meta property="og: url" content="https://ibb.co/4mdgy7s"> 
+    <meta property="og: description" content="Productos hechos con mucho amor"> 
+    <meta property="og: author" content="Mariana Lema">
+    <meta property="og: lolale" content="“en_ES”"> 
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  
+    <link rel="stylesheet" href="css\style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Baloo+Chettan+2&family=Meddon&family=Montserrat&family=Roboto:wght@100&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css"
+    integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/a0ddbc7093.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <title>(6) Comprar - Victoria Ortiz Repostería 💟</title>
+</head>
+
+
+<body>
+
+    <header>
+        <div class="web menuweb">
+
+            <a class="logo" href="index.html">
+                <img src="images/logo.png" loading= lazy alt="Logo de la marca">
+            </a>
+
+            <nav>
+
+                <ul class="menu">
+
+                    <li>
+                        <a href="conocenos.html">Conocenos</a>
+                    </li>
+
+                    <li>
+                        <a href="galeria.html">Galería</a>
+                    </li>
+
+                    <li>
+                        <a href="productos.html"> Productos</a>
+                    </li>
+
+                    <li>
+                        <a href="pedidos.html">Consultas</a>
+                    </li>
+
+                    <li>
+                        <a href="comprar.html">Comprar</a>
+                    </li>
+
+                </ul>
+
+            </nav>
+        </div>
+
+        <div class="mobile menumobile">
+            <img src="images/logo.png" loading= lazy alt="Logo de la marca">
+
+            <nav class="subnav-content-mobile">
+                <ul>
+                    <li>
+                        <a href="index.html">Inicio</a>
+                    </li>
+                    <li>
+                        <a href="conocenos.html">Conocenos</a>
+                    </li>
+                    <li>
+                        <a href="galeria.html">Galería</a>
+                    </li>
+                    <li>
+                        <a href="productos.html"> Productos</a>
+                    </li>
+                    <li>
+                        <a href="pedidos.html">Hacer mi pedido</a>
+                    </li>
+                </ul>
+            </nav>
+            
+            <div class="mobile">
+                <h1>Victoria Ortiz</h1>
+            </div>
+
+        </div>
+
+    </header>
+
+    <div id=fakeHeader>
+        <h1 id="greet"></h1>
+        <div>
+            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                <i class="fas fa-shopping-cart"></i>
+            </button>
+            <span id="cart-counter">0</span>
+
+        </div>
+    </div>
+
+
+    <section>
+        <div id="shop" class="row justify-content-center mx-0">
+        </div>
+    </section>
+
+    <!-- Carrito -->
+
+    <section>
+        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Mi carrito de compras</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+
+                    <div id="modal-body" class="modal-body">
+
+                    </div>
+                    <p class="modal-body"><span id="total-price"></span></p>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Seguir
+                            comprando</button>
+                        <button type="button" class="btn btn-primary">Terminar compra</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+
+    </section>
+
+    <footer>
+        <div class="web">
+            <a href="https://www.facebook.com/search/top?q=Victoria%20Ortiz%20Reposteria" target="_blank" rel="noopener">
+                <i class="fab fa-facebook-f"></i>
+            </a>
+            <a href="https://www.instagram.com/victoria.ortiz.reposteria/" target="blank" rel="noopener">
+                <i class="fab fa-instagram"></i>
+            </a>
+            <a href="https://web.whatsapp.com/" target="_blank" rel="noopener">
+                <i class="fab fa-whatsapp"></i>
+            </a>
+        </div>
+
+        <div class="mobile">
+            <a href="https://www.facebook.com/search/top?q=Victoria%20Ortiz%20Reposteria">
+                <i class="fab fa-facebook-f"></i>
+            </a>
+            <a href="https://www.instagram.com/victoria.ortiz.reposteria/">
+                <i class="fab fa-instagram"></i>
+            </a>
+            <a href="https://web.whatsapp.com/">
+                <i class="fab fa-whatsapp"></i>
+            </a>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <script src="js/logIn.js"></script>
+    <script src="js/stock.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/animation.js"></script>
+    
+</body>
