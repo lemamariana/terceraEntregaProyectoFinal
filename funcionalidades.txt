@@ -1,0 +1,22 @@
+Se trata de una app para realizar compra de productos en una tienda de tortas.
+
+Para esta entrega lo integré con la página de la repostería que ya estaba utilizada.
+
+Para la integración de Ajax creé el ajax.js
+Para los estilos de todo lo realizado con js creé el js.scss en la carpeta de scss
+
+Funcionalidades:
+
+    - Log In y permanencia de productos en carritos luego de cerrar ventana de compra
+    - Carrito con mostrador de productos incluidos en él
+    - Cariito con resumen de productos agrupados por tipo, con posibiliad de aumentar/ bajar stock con botones de agregar y eliminar
+    - Carrito con resumen de precio de total de la compra
+    - Funcionalidad del botón terminar compra, que baja el stock real (no se baja mientras está en el carrito) y borra las variables del carrito en storage json.
+    - Llamadas a API por ajax para ver comentarios de la gente
+    - Utilización de libreria jQuery
+
+Funcionalidades a desarrollar:
+
+    - Aspectos gráficos de la página para modalidad mobile (está solo desarrollado para desktop)
+    - Paginado para los comentarios
+    - Modal para finalizar compra, de manera de poder agregar una dirección y datos de tarjeta para realizar el pago.

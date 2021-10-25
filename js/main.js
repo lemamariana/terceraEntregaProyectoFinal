@@ -9,6 +9,7 @@ const finishPurchase = $('#finish-purchase');
 
 //DOM - defino función para mostrar productos disponibles con cards
 const showProducts = (array) => {
+    shopNode.empty();
     array.forEach(stockProductos => {
         //defino estructura interna del div con jQuery
         shopNode.append(`<div style="width:18rem" class= "card mx-3 mt-3"><img src="${stockProductos.img}" alt="${stockProductos.alt}">
@@ -27,12 +28,6 @@ const showProducts = (array) => {
 
     })
 }
-//DOM - llamo función para mostrar productos
-showProducts(stockProductos);
-
-// DOM- muestro saludo
-greetNode.text("Hola " + user + "! Estos son los productos que tenemos disponibles:");
-
 //defino funcion agregar al carrito
 const addToCart = (itemId) => {
 
@@ -100,9 +95,9 @@ const refreshCart = () => {
 }
 
 //DOM - funcion eliminar producto
-const deleteProduct = (itemID) => {
+const deleteProduct = (itemId) => {
 
-    const product = cart.find((prod) => prod.id === itemID);
+    const product = cart.find((prod) => prod.id === itemId);
 
     product.quantity--;
 
@@ -116,6 +111,32 @@ const deleteProduct = (itemID) => {
 
     console.log(cart);
 }
+
+const purchase = () => {
+
+    cart.forEach(product => {
+
+        const purchasedProduct = stockProductos.find((prod) => prod.id === product.id);
+        purchasedProduct.stock-=product.quantity;
+    }) 
+
+    cart = [];
+    refreshCart();
+    showProducts(stockProductos);
+    cartCounter.text("0");
+    localStorage.removeItem('cartContent');
+    localStorage.removeItem('cartCounter');
+    localStorage.removeItem('totalPrice');
+    localStorage.removeItem('cart');
+
+}
+
+//DOM - llamo función para mostrar productos
+showProducts(stockProductos);
+// DOM- muestro saludo
+greetNode.text("Hola " + user + "! Estos son los productos que tenemos disponibles:");
+
+finishPurchase.click(purchase);
 
 
 

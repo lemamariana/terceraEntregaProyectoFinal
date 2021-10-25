@@ -11,8 +11,8 @@ class Products {
         this.quantity = 1;
     }
     /*Métodos*/
-    sale = function (stock) {
-        this.stock -= stock;
+    sale = function (quantity) {
+        this.stock -= quantity;
     }
     replace = function (stock) {
         this.stock += stock;
