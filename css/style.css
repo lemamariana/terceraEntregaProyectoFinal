@@ -473,6 +473,10 @@ header a, footer a {
   margin: 6.5vh;
 }
 
+#inputOrder {
+  height: 20vh;
+}
+
 /*variables utilizadas*/
 /*variables utilizadas*/
 /*medias que toman el valor base definido y hacen desaparecer los divs correspondientes para cada uno*/

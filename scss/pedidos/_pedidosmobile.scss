@@ -2,6 +2,10 @@
     margin: 6.5vh;
 }
 
+#inputOrder{
+    height: 20vh;
+}
+
 @include query (mobile){
 
    @include column (center);
